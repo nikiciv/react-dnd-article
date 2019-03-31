@@ -17,5 +17,9 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.<br>
 
+### `npm flow`
+
+Run npm run flow (or yarn flow) to check the files for type errors.<br>
+
 
 
