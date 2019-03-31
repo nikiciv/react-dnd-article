@@ -27,7 +27,17 @@ export default class DragAndDropCase1 extends React.PureComponent {
     return (
       <div className="sl-panel" style={{ margin: '20px' }}>
         <h4 style={{ padding: '0 20px' }}>Drag and Drop Case #1</h4>
-        <h5 style={{ padding: '0 20px' }}>DragTrigger is also DropArea (white square)</h5>
+        <div 
+          style={{
+                backgroundColor: 'steelblue',
+                color: 'white',
+                borderRadius: '20px',
+                display: 'inline-block',
+                marginLeft: '20px'
+              }}
+        >
+          <p style={{ padding: '0 20px' }}><b>DragTrigger</b> is also <b>DropArea</b> (white square).</p>
+        </div>
         <div style={{ padding: '20px' }}>
           <div
             style={{
@@ -37,6 +47,7 @@ export default class DragAndDropCase1 extends React.PureComponent {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
+              borderRadius: '20px',
             }}
           >
             <DragTrigger
@@ -53,6 +64,7 @@ export default class DragAndDropCase1 extends React.PureComponent {
                     alignItems: 'center',
                     fontWeight: 'bold',
                     border: '1px steelblue dashed',
+                    borderRadius: '15px',
                   }}
                 >
                   {this.handleDropAreaLabel(isDragActive)}

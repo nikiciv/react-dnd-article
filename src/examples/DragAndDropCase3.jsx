@@ -23,12 +23,21 @@ export default class DragAndDropCase3 extends React.PureComponent {
     return (
       <div className="sl-panel" style={{ margin: '20px' }}>
         <h4 style={{ padding: '0 20px' }}>Drag and Drop Case #3</h4>
-        <h5 style={{ padding: '0 20px' }}>DragTrigger is the grey square.</h5>
-        <h5 style={{ padding: '0 20px' }}>
-          DropArea is the white square and when the file is dragged over the grey area the DropArea
-          becomes the entire grey area.
-        </h5>
-
+         <div 
+          style={{
+                backgroundColor: 'steelblue',
+                color: 'white',
+                borderRadius: '20px',
+                display: 'inline-block',
+                marginLeft: '20px'
+              }}
+        >
+          <p style={{ padding: '0 20px' }}><b>DragTrigger</b> is the grey square.</p>
+          <p style={{ padding: '0 20px' }}>
+            <b>DropArea</b> is the white square and when the file is dragged over the grey area the <b>DropArea</b> becomes
+            the entire grey area.
+          </p>
+        </div>
         <div style={{ padding: '20px' }}>
           <DragTrigger
             style={{
@@ -38,6 +47,7 @@ export default class DragAndDropCase3 extends React.PureComponent {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
+              borderRadius: '20px',
             }}
             children={isDragActive =>
               isDragActive ? (
@@ -53,6 +63,7 @@ export default class DragAndDropCase3 extends React.PureComponent {
                     alignItems: 'center',
                     fontWeight: 'bold',
                     border: '2px dashed dimgrey',
+                    borderRadius: '20px',
                   }}
                 >
                   {this.handleDropAreaLabel()}
@@ -68,6 +79,8 @@ export default class DragAndDropCase3 extends React.PureComponent {
                     justifyContent: 'center',
                     alignItems: 'center',
                     fontWeight: 'bold',
+                    border: '1px steelblue dashed',
+                    borderRadius: '15px',
                   }}
                 >
                   Drop area!
