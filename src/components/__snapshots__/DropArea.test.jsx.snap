@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DropArea /> renders DropArea component correctly 1`] = `
+<DropArea
+  className="abc"
+  onFileDrop={[MockFunction]}
+>
+  <div
+    className="abc"
+    onDragOver={[Function]}
+    onDrop={[Function]}
+  />
+</DropArea>
+`;

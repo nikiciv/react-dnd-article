@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import DragAndDrop from './DragAndDrop';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<DragAndDrop />, document.getElementById('root'));
 
 
